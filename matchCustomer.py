@@ -51,15 +51,21 @@ nam_2 = name.replace('Shri. ', "")
 #Splite String in part
 nam_1 = nam_1.split(" ")
 nam_1=np.char.upper(nam_1)
-nam_1.sort()
+
 nam_2 = nam_2.split(" ")
 nam_2 = np.char.upper(nam_2)
+
+
+
+nam_1.sort()
 nam_2.sort()
+
+
 
 n = 0
 if len(nam_1)>len(nam_2):
     n = len(nam_2)
 else :
     n = len(nam_1)
-    
+
 arangeWord(nam_1, nam_2, 0, n)
